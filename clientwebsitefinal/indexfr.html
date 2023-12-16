@@ -1,0 +1,306 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Garderie LeChalet</title>
+    <!-- ==== CSS ==== -->
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/flickity@2/dist/flickity.min.css"
+    />
+    <!-- JavaScript -->
+    <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+  <h1 class="logo">LeChalet</h1>
+  <ul class="nav-links">
+    <li class="active"><a href="#home">Home</a></li>
+    <li><a href="#services">Services</a></li>
+    <li><a href="#gallery">Gallery</a></li>
+    <li><a href="#join-us">JOIN US</a></li>
+    <li class="ctn"><a href="index.html">en</a></li>
+  </ul>
+  <div class="mobile-nav">
+    <img src="./img/menu-btn.png" alt="" class="menu-btn" />
+    <h1 class="close-btn">X</h1>
+  </div>
+</nav>
+
+    <header id="home">
+      <div class="header-content">
+        <h2>BIENVENUE À </h2>
+        <div class="line"></div>
+        <h1>Garderie LeChalet</h1>
+        <p class="intro">
+          Nous sommes une garderie trilingue (Français, Anglais et Farsi) et subventionnée. Nous sommes une garderie dont l'objectif principale est l'apprentissage et le bon développement de votre enfant. Nous accueillons des enfants de  0 à 5 ans.  Pour plus d'Information sur nous, nous vous
+invitons à parcourir notre site web.  
+        </p>
+        <a href="#" class="ctn">En Savoir Plus</a>
+      </div>
+    </header>
+    <br>
+<div class="title" id="services">
+      <h2>Nos Services</h2>
+      
+      <div class="line"></div>
+      <p>Ouvert lundi à vendredi
+6:30 Am à 18:00 Pm
+​</p><p>8$/jour pour les enfants de 18 mois a 5 ans
+​</p>
+</div>      
+      <br />
+    <!-- == Events == -->
+    <div class="rows">
+        <div class="column">
+          <div class="card">
+            <img src="./img/orange.jpg" alt="Jane" style="width: 100%" />
+            <div class="container">
+              <p class="title">Repas</p>
+              <p>Nous offrons le déjeuner, le dîner et deux collations. les repas sont préparés sur place. Il intègre l’ensemble des aliments nécessaires à sa croissance. Les repas apportent une alimentation équilibrée et saine tout au long de la semaine.</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="column">
+          <div class="card">
+            <img src="./img/outcar.jpg" alt="Mike" style="width: 100%" />
+            <div class="container">
+              <p class="title">Activities</p>
+              <p>Ici, à la garderie Le Chalet, nous mettons en place des activités de groupe qui permettent à votre enfant de s'engager dans des interactions sociales avec d'autres enfants, comme le coloriage, les puzzles et bien d'autres activités amusantes à l'extérieur et à l'intérieur.</p>
+            </div>
+          </div>
+        </div>
+
+        
+        </div>
+      </div>
+
+    <section id="join-us" class="explore">
+      <div class="explore-content">
+        <h1>Nous rejoindre</h1>
+        <div class="line"></div>
+        <p class="join">
+          Vous souhaitez prendre quelques heures de congé pour faire des courses, aller au restaurant, chercher du travail ou tout simplement profiter d'un peu de tranquillité ?
+          Vous cherchez un lieu sûr, ludique, éducatif, avec un personnel compétent et attentif pour confier votre enfant ? La garderie Le Chalet est
+          l'endroit idéal pour vous. Pour nous contacter afin d'obtenir plus d'informations ou pour
+          inscrire votre enfant, vous pouvez nous envoyer un email, nous appeler ou venir nous voir sur place.
+        </p>
+        <a
+          onclick="document.getElementById('id01').style.display='block'"
+          style="width: auto"
+          class="ctn"
+          >S'inscrire</a
+        >
+      </div>
+      <div id="id01" class="modal">
+        <span
+          onclick="document.getElementById('id01').style.display='none'"
+          class="close"
+          title="Close Modal"
+          >&times;</span
+        >
+        <form class="modal-content" action="">
+          <div class="container">
+            <h1>Inscription</h1>
+            <p>Veuillez remplir ce formulaire pour vous inscrire.</p>
+            <hr />
+            <label for="email"><b>Email</b></label>
+            <input
+              type="text"
+              placeholder="Enter Email"
+              name="email"
+              required
+            />
+
+            <label for="childname"><b>Nom de l'enfant</b></label>
+            <input
+              type="text"
+              placeholder="Entrer nom de l'enfant"
+              name="childname"
+              required
+            />
+
+            <label for="mothername"><b>Nom de la mère</b></label>
+            <input
+              type="text"
+              placeholder="Entrer nom de la mère"
+              name="mothername"
+              required
+            />
+            <label for="fathername"><b>Nom du père</b></label>
+            <input
+              type="text"
+              placeholder="Entrer nom du père"
+              name="fathername"
+              required
+            />
+            <label for="telephone"><b>Téléphone</b></label>
+            <input type="number" placeholder="+1" name="telephone" required />
+
+            <label for="dob"><b>Date de naissance de l'enfant</b></label>
+            <input
+              type="text"
+              placeholder="Enter date of birth"
+              name="dob"
+              required
+            />
+            <label for="allergies"
+              ><b>Votre enfant a t-il des allergies?</b></label
+            >
+            <input
+              type="text"
+              placeholder="oui ou non"
+              name="allergies"
+              required
+            />
+            <label for="question"
+              ><b>Comment avez vous découvert notre garderie?</b></label
+            >
+            <input
+              type="text"
+              placeholder="Je l'ai appris par ..."
+              name="question"
+              required
+            />
+
+            <div class="clearfix">
+              <button
+                type="button"
+                onclick="document.getElementById('id01').style.display='none'"
+                class="cancelbtn"
+              >
+                Annuler
+              </button>
+              <button type="submit" class="signupbtn">S'inscrire</button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="map">
+        <iframe
+          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2796.5018885812647!2d-73.81692292333433!3d45.499974531050384!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cc93ca6894db8fd%3A0x3e2a589c90e6b983!2s25%20Rue%20Matignan%2C%20Dollard-des-Ormeaux%2C%20QC!5e0!3m2!1sen!2sca!4v1700837579224!5m2!1sen!2sca"
+          width="600"
+          height="450"
+          style="border: 0"
+          allowfullscreen=""
+          loading="lazy"
+          referrerpolicy="no-referrer-when-downgrade"
+        ></iframe>
+      </div>
+    </section id="carousel">
+    <div class="title">
+      <h2>Galerie</h2>
+      <div class="line"></div>
+      <br />
+    </div>
+
+    <div id="gallery" class="main-carousel">
+      <div class="carousel-cell">
+        <img src="./img/pool3.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./img/pool2.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./img/pool1.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./img/flowertable.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./img/orange.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./img/cupcakes.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./img/indoorgroup.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./img/bday.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./img/outtable.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./img/games.jpg" alt="" />
+      </div>
+      <div class="carousel-cell">
+        <img src="./img/325526139_875053280210402_5302566280262964106_n.jpg" alt="" />
+      </div>
+    </div>
+
+    <section class="footer">
+      <p>
+        25 Rue Matignan, Dollard-des-Ormeaux, QC | Téléphone: 800-123-456 | Courriel:
+        contact@example.com <a href="https://www.instagram.com/garderie_lechalet/" class="fa fa-instagram"></a>
+      </p>
+      
+      <p>Copyright © 2024 LeChalet</p>
+    </section>
+
+    <script>
+      const mobileNav = document.querySelector(".mobile-nav");
+      const menuBtn = document.querySelector(".menu-btn");
+      const navlinks = document.querySelector(".nav-links");
+      const closeBtn = document.querySelector(".close-btn");
+
+      mobileNav.addEventListener("click", (e) => {
+        navlinks.classList.toggle("mobile-menu");
+        if (e.target === menuBtn) {
+          menuBtn.replaceWith(closeBtn);
+          closeBtn.style.display = "block";
+        }
+        if (e.target === closeBtn) {
+          closeBtn.replaceWith(menuBtn);
+        }
+      });
+
+      var elem = document.querySelector(".main-carousel");
+      var flkty = new Flickity(elem, {
+        // options
+        cellAlign: "left",
+        contain: true,
+        wrapAround: true,
+      });
+
+      // element argument can be a selector string
+      //   for an individual element
+      var flkty = new Flickity(".main-carousel", {
+        // options
+      });
+      var modal = document.getElementById("id01");
+
+      // When the user clicks anywhere outside of the modal, close it
+      window.onclick = function (event) {
+        if (event.target == modal) {
+          modal.style.display = "none";
+        }
+      };
+                function doPost(e) {
+            var sheet = SpreadsheetApp.openById('YOUR_SPREADSHEET_ID').getActiveSheet();
+
+            var rowData = [];
+            rowData.push(new Date());  // Timestamp
+            rowData.push(e.parameter.email);
+            rowData.push(e.parameter.childname);
+            rowData.push(e.parameter.mothername);
+            rowData.push(e.parameter.fathername);
+            rowData.push(e.parameter.telephone);
+            rowData.push(e.parameter.dob);
+            rowData.push(e.parameter.allergies);
+            rowData.push(e.parameter.question);
+
+            sheet.appendRow(rowData);
+
+            return ContentService.createTextOutput('Success').setMimeType(ContentService.MimeType.TEXT);
+            }
+    </script>
+  </body>
+</html>
