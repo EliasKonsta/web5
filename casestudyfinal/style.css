@@ -1,0 +1,347 @@
+@import url("https://fonts.googleapis.com/css2?family=League+Spartan:wght@100;500;700&family=Poppins:wght@200;300;400;500;600;700;800&family=Roboto:wght@100;400;500;700;900&display=swap");
+body {
+  font-family: "League Spartan", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  height: 100vh;
+  background-color: #080808;
+}
+.small span {
+  color: #b1b1b1;
+}
+.content {
+  flex: 1;
+  padding: 20px;
+  color: whitesmoke;
+  margin-top: 250px;
+}
+.small {
+  font-size: 14px;
+}
+
+.quote {
+  font-size: 40px;
+  margin-bottom: 20px;
+  float: left;
+  white-space: pre-wrap;
+  max-width: 300px;
+  margin-top: 100px;
+}
+.quote-and-bio {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  max-width: 100px;
+}
+
+.bio {
+  font-size: 18px;
+  color: rgb(204, 204, 204);
+  float: right;
+  flex: 1;
+  max-width: 500px;
+  margin-right: 50px;
+  margin-top: 95px;
+  font-weight: 100;
+  line-height: 30px;
+}
+.visit-site-button {
+  background-color: #3498db;
+  color: #fff;
+  padding: 10px 20px;
+  font-size: 18px;
+  border: none;
+  border-radius: 30px;
+  margin-top: 40px;
+  margin-left: 390px;
+  cursor: pointer;
+}
+
+.visit-site-button:hover {
+  background-color: #217dbb;
+}
+.slideshow-container {
+  flex: 1;
+  overflow: hidden;
+}
+
+.mySlides {
+  display: none;
+}
+
+img {
+  width: 100%;
+  height: 100vh;
+  object-fit: cover;
+}
+.transparent-image {
+  position: absolute;
+  margin-left: 180px;
+  margin-top: -320px;
+  width: 33%;
+  height: 100%;
+}
+/* Add styling for navigation dots */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.dot.active {
+  background-color: #717171;
+}
+.project-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.project-item {
+  flex: 1;
+  margin: 10px;
+}
+
+.project-item img {
+  max-width: 100%;
+  height: auto;
+}
+
+.project-item p {
+  text-align: left;
+}
+
+.project-item.inverted {
+  flex-direction: row-reverse;
+}
+.content-container {
+  display: flex;
+  align-items: center;
+  max-width: 75%;
+  margin: 20px auto;
+  margin-top: 100px;
+}
+.content-container #four {
+  margin-top: 200px;
+}
+.text-container,
+.image-container {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.description-title {
+  font-size: 50px;
+  font-weight: bold;
+  margin-bottom: 50px;
+}
+
+.description-text {
+  font-size: 20px;
+  line-height: 25px;
+  font-weight: 100;
+}
+.content-container .image-container img {
+  width: 100%;
+  height: auto;
+}
+.content-container #two .image-container {
+  float: left;
+  margin-right: 20px; /* Add margin for separation */
+}
+.image-container img {
+  height: auto;
+  width: 100%;
+}
+
+.outcome-section {
+  background-color: #000000; /* Change the background color as needed */
+  color: #fff;
+  text-align: center;
+  padding: 50px 0;
+}
+
+.outcome-box {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.outcome-box h2 {
+  font-size: 2em;
+  text-align: left;
+}
+
+.outcome-box p {
+  font-size: 1.2em;
+  line-height: 25px;
+  font-weight: 100;
+  text-align: left;
+}
+.color-palette {
+  text-align: center;
+  margin-top: 50px;
+  margin: 50px;
+  overflow: hidden;
+}
+.color-row {
+  margin-bottom: 20px;
+  opacity: 0;
+  transition: opacity 1s;
+}
+.color-row h3 {
+  font-size: 50px;
+}
+.color-box {
+  width: 100px;
+  height: 100px;
+  display: inline-block;
+  margin: 0 10px;
+  border: 1px solid #fff;
+}
+span .color-box {
+  border: 1px solid #000;
+}
+
+div#quad {
+  background-color: #000;
+  font-size: 0;
+  width: 60%;
+  margin: 0 auto;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.8);
+  margin-bottom: 80px;
+}
+div#quad figure {
+  margin: 0;
+  width: 50%;
+  height: auto;
+  transition: 1s;
+  display: inline-block;
+  position: relative;
+  overflow: hidden;
+}
+div#quad figure:hover {
+  cursor: pointer;
+  z-index: 4;
+}
+div#quad figure img {
+  width: 100%;
+  height: auto;
+}
+div#quad figure:nth-child(1) {
+  transform-origin: top left;
+}
+div#quad figure:nth-child(2) {
+  transform-origin: top right;
+}
+div#quad figure:nth-child(3) {
+  transform-origin: bottom left;
+}
+div#quad figure:nth-child(4) {
+  transform-origin: bottom right;
+}
+div#quad figure figcaption {
+  margin: 0;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.3);
+  color: #fff;
+  padding: 0.3rem;
+  font-size: 1.2rem;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  transition: 1s 1s opacity;
+}
+.expanded {
+  transform: scale(2);
+  z-index: 5;
+}
+div#quad figure.expanded figcaption {
+  opacity: 1;
+}
+div.full figure:not(.expanded) {
+  pointer-events: none;
+}
+.footer {
+  background-color: #000000;
+  color: #fff;
+  text-align: center;
+  padding: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.logo img {
+  max-height: 150px;
+}
+.footer-content {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+@media (max-width: 768px) {
+  .project-content {
+    flex-direction: column;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .container {
+    flex-direction: column;
+  }
+
+  .content,
+  .transparent-image {
+    margin-top: 20px;
+  }
+
+  .small {
+    font-size: 12px;
+  }
+
+  .logo img {
+    max-width: 300px;
+  }
+  .transparent-image {
+    position: absolute;
+    top: -220px; /* Adjust top position as needed */
+    left: 50%; /* Center the image horizontally */
+    transform: translateX(-50%); /* Center the image horizontally */
+    width: 100%; /* Set the width to 100% of the container */
+    height: auto; /* Allow the height to adjust proportionally */
+  }
+  .quote {
+    font-size: 24px;
+  }
+  .content,
+  .transparent-image {
+    margin-top: 20px;
+  }
+  .bio {
+    font-size: 16px;
+  }
+
+  .visit-site-button {
+    font-size: 16px;
+  }
+
+  .slideshow-container {
+    flex: 1;
+    overflow: hidden;
+    height: 500px; /* Adjust the height as needed */
+  }
+
+  /* Add this CSS code to center the slides vertically within the container */
+  .mySlides {
+    display: flex;
+    align-items: center;
+  }
+}
