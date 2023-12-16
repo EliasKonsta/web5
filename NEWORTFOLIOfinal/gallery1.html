@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Elias Konstantopoulos - Graphic Designer Portfolio</title>
+    <link rel="stylesheet" href="gallery1.css" />
+  </head>
+  <body>
+    <nav>
+      <img src="./IMAGES/logo.png" alt="Logo" />
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="#about-me">About Me</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#skills">Porfolio</a></li>
+        <!-- Add more navigation items as needed -->
+      </ul>
+      <div class="mobile-menu-icon" onclick="toggleMobileMenu()">☰</div>
+    </nav>
+    <h1 class="project-title">Featured Works</h1>
+    <div id="one" class="content-container">
+      <div class="text-container">
+        <div class="description-title">Logo Brand Guide</div>
+        <div class="description-text">
+          <!-- Add your description text here -->
+          Elevate your brand's visual identity with the Logo Brand Guide for
+          Drip. This concise and informative guide is designed to provide clear
+          and practical instructions for the consistent and impactful use of our
+          logo across various platforms. From color specifications to scaling
+          guidelines, this guide ensures that every representation of our brand
+          reflects the essence and professionalism of Drip entertainment.
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="IMAGES/Capture.PNG" alt="Image 1" />
+      </div>
+    </div>
+
+    <!-- Second container with text on the right and image on the left -->
+    <div id="two" class="content-container">
+      <div class="image-container">
+        <img src="IMAGES/Capture2.PNG" alt="Image 2" />
+      </div>
+      <div class="text-container">
+        <div class="description-title">HUF Brand Analysis</div>
+        <div class="description-text">
+          <!-- Add your description text here -->
+          LEmbark on a brief exploration of HUF, where streetwear meets skate
+          culture in a dynamic fusion. This concise brand analysis provides a
+          snapshot of HUF's essence, offering a glimpse into its origins, design
+          ethos, and its unmistakable imprint on the fashion landscape.
+        </div>
+      </div>
+    </div>
+
+    <!-- Third container -->
+    <div id="three" class="content-container">
+      <div class="text-container">
+        <div class="description-title">PUBLIC AWARNESS CAMPAIGN</div>
+        <div class="description-text">
+          <!-- Add your description text here -->
+          A campaign to raise awareness of domestic violence against women in
+          the community. The need to create an idea for successfully
+          communicating the message in an elegant yet alarming way. To grab’s
+          people attention if walking or scrolling by it.
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="IMAGES/Artboard 1.png" alt="Image 3" />
+      </div>
+    </div>
+    <div id="one" class="content-container">
+      <div class="text-container">
+        <div class="description-title">Proposal for XNotes</div>
+        <div class="description-text">
+          <!-- Add your description text here -->
+          Welcome to the future of note-taking with Xnotes – a cutting-edge
+          application designed to revolutionize the way we capture, organize,
+          and collaborate on ideas. This website proposal outlines our vision
+          for the online platform that will introduce users to the seamless,
+          intuitive, and powerful world of Xnotes.
+        </div>
+      </div>
+      <div class="image-container">
+        <img src="IMAGES/Capture3.PNG" alt="Image 3" />
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div class="mobile-menu">
+      <a href="#about-me" onclick="toggleMobileMenu()">About Me</a>
+      <a href="#skills" onclick="toggleMobileMenu()">Skills</a>
+      <!-- Add more mobile menu items as needed -->
+    </div>
+    <script>
+      function toggleMobileMenu() {
+        const mobileMenu = document.querySelector(".mobile-menu");
+        mobileMenu.style.display =
+          mobileMenu.style.display === "block" ? "none" : "block";
+      }
+      function toggleMenu() {
+        const navLinks = document.querySelector(".nav-links");
+        navLinks.classList.toggle("show");
+      }
+    </script>
+  </body>
+</html>

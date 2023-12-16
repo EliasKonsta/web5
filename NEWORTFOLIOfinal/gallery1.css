@@ -1,0 +1,153 @@
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+.project-title {
+  font-family: "Your Custom Font", sans-serif; /* Use a custom font if desired */
+  color: #333; /* Set your desired text color */
+  text-align: center;
+  font-size: 3em; /* Adjust the font size as needed */
+  margin-top: 100px; /* Adjust the top margin for spacing */
+  position: relative; /* Needed for positioning the underline */
+  margin-bottom: 10px; /* Add margin at the bottom of the text */
+}
+
+/* Green underline for the title */
+.project-title::after {
+  content: "";
+  display: block;
+  height: 2px; /* Adjust the thickness of the underline */
+  background-color: #4caf50; /* Set the color of the underline to green */
+  position: absolute;
+  bottom: -8px; /* Adjust the position of the line */
+  left: 0;
+  width: 100%; /* Make the underline span the full width of the title */
+  margin-top: 8px; /* Add margin at the top of the line */
+}
+/* Navigation styles */
+nav {
+  width: 100%;
+  position: fixed;
+  top: 0;
+  background-color: #4caf50;
+  z-index: 1000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+nav img {
+  height: 40px; /* Adjust the height of the logo */
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+}
+
+nav a {
+  text-decoration: none;
+  color: #fff;
+  margin: 0 15px;
+  transition: color 0.3s ease-in-out;
+}
+
+nav a:hover {
+  color: #ffffff;
+}
+/* Mobile menu styles */
+.mobile-menu-icon {
+  display: none; /* Hide on larger screens */
+}
+
+.mobile-menu {
+  display: none;
+  position: fixed;
+  top: 60px;
+  left: 0;
+  width: 100%;
+  background-color: #4caf50;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  z-index: 900;
+}
+
+.mobile-menu a {
+  display: block;
+  text-align: center;
+  padding: 10px 0;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease-in-out;
+}
+
+.mobile-menu a:hover {
+  color: #f7f7f7;
+}
+.content-container {
+  display: flex;
+  align-items: center;
+  max-width: 800px;
+  margin: 20px auto;
+  margin-top: 100px;
+}
+.content-container #four {
+  margin-top: 200px;
+}
+.text-container,
+.image-container {
+  flex: 1;
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.description-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.description-text {
+  font-size: 16px;
+}
+
+.image-container img {
+  max-width: 100%;
+  height: auto;
+  width: 100%;
+}
+/* Media query for smaller screens */
+@media (max-width: 768px) {
+  nav ul {
+    display: none; /* Hide on larger screens */
+  }
+
+  .mobile-menu-icon {
+    display: block;
+    cursor: pointer;
+    font-size: 24px;
+    color: #fff;
+    margin-right: 10px;
+  }
+
+  .mobile-menu {
+    display: block;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  nav ul {
+    display: none;
+  }
+}
